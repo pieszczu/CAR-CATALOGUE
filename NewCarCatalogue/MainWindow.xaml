@@ -6,15 +6,27 @@
         xmlns:local="clr-namespace:NewCarCatalogue"
         mc:Ignorable="d"
         Title="CarCatalogue" Height="450" Width="800"
-        ResizeMode="NoResize">
-    <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="46,116,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Name="COMBO1"/>
-        <Image HorizontalAlignment="Left" Height="209" Margin="190,173,0,0" VerticalAlignment="Top" Width="401"/>
-        <ComboBox Name="COMBO2" HorizontalAlignment="Left" Margin="190,116,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox Name="COMBO3" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="537,118,0,0" VerticalAlignment="Top"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="647,277,0,0" VerticalAlignment="Top"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="676,277,0,0" VerticalAlignment="Top"/>
+        ResizeMode="NoResize"
+        Background="#99D9EA">
+    <Grid Margin="0,0,0,8">
+        <ComboBox HorizontalAlignment="Left" Margin="46,116,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Name="brandBox" IsSynchronizedWithCurrentItem="False" IsEditable="True"/>
+        <Image Source="{Binding BitmapImage}" Name="imagee" HorizontalAlignment="Left" Height="209" Margin="166,213,0,0" VerticalAlignment="Top" Width="401"/>
+        <ComboBox Name="modelBox" HorizontalAlignment="Left" Margin="190,116,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="COMBO2_SelectionChanged" IsEditable="True"/>
+        <ComboBox Name="colorBox" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="COMBO3_SelectionChanged"/>
+        <Button Name="showBTN"  Content="Show" HorizontalAlignment="Left" Margin="537,118,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Name="editBTN" Background="DarkOrange" Foreground="White" Content="Edit" HorizontalAlignment="Left" Margin="647,277,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Name="deleteBTN" Background="red" Foreground="white" Content="Delete" HorizontalAlignment="Left" Margin="676,277,0,0" VerticalAlignment="Top" Click="DeleteBtn_Click"/>
+        <Button Name="ANV" Background="Green" Foreground="White" Content="Add a new vehicle" HorizontalAlignment="Left" Margin="676,46,0,0" VerticalAlignment="Top" Click="ANV_Click"/>
+        <Button Name="Reset" Background="Blue" Foreground="White" Content="Reset" HorizontalAlignment="Left" Margin="581,118,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="Brand" HorizontalAlignment="Left" Margin="85,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="231,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fuel Type" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name ="fTypeBox" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="FTypeBox_SelectionChanged"/>
+        <Label Content="Year of production" HorizontalAlignment="Left" Margin="52,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Engine capacity" HorizontalAlignment="Left" Margin="207,150,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="yOProductionBox" HorizontalAlignment="Left" Margin="46,177,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="YOProductionBox_SelectionChanged"/>
+        <ComboBox Name="eCapacityBox" HorizontalAlignment="Left" Margin="193,177,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="ECapacityBox_SelectionChanged"/>
 
     </Grid>
 </Window>

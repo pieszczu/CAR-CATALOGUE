@@ -1,0 +1,31 @@
+﻿<Window x:Class="NewCarCatalogue.AddNewVehicle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewCarCatalogue"
+        mc:Ignorable="d"
+        Title="AddNewVehicle" Height="300" Width="700"
+        ResizeMode="NoResize"
+        Background="#99D9EA">
+    <Grid>
+        <Label Content="Add a new Vehicle" FontSize="40" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Button Name="BackBtn" Content="Back" HorizontalAlignment="Left" Margin="39,220,0,0" VerticalAlignment="Top" Click="BackBtn_Click"/>
+        <ComboBox  Name="addBrand" HorizontalAlignment="Left" Margin="79,90,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addBrand_SelectionChanged"/>
+        <ComboBox Name="addModel" HorizontalAlignment="Left" Margin="249,90,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addModel_SelectionChanged"/>
+        <ComboBox Name="addColor" HorizontalAlignment="Left" Margin="400,140,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addColor_SelectionChanged"/>
+        <Button Name="addVehicle" Content="Add" Background="Green" Foreground="White" HorizontalAlignment="Left" Margin="606,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.708,-0.561" Click="addVehicle_Click"/>
+        <Button Name="addPhoto" Content="choose photo" Background="DarkOrange" Foreground="White" HorizontalAlignment="Left" Margin="269,170,0,0" VerticalAlignment="Top" Height="19" Width="80" Click="addPhoto_Click"/>
+        <Label Name="source" Content="" HorizontalAlignment="Left" Margin="189,191,0,0" VerticalAlignment="Top"/>
+        <Button Name="resetBtn" Content="Reset" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="637,121,0,0" VerticalAlignment="Top" Click="resetBtn_Click"/>
+        <ComboBox Name="addFTypeBox" HorizontalAlignment="Left" Margin="400,90,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addFTypeBox_SelectionChanged"/>
+        <ComboBox Name="addYOProductionBox" HorizontalAlignment="Left" Margin="79,140,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addYOProductionBox_SelectionChanged"/>
+        <ComboBox Name="addECapacityBox" HorizontalAlignment="Left" Margin="249,140,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="addECapacityBox_SelectionChanged"/>
+        <Label Content="Brand" HorizontalAlignment="Left" Margin="115,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="285,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color" HorizontalAlignment="Center" Margin="230,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fuel Type" HorizontalAlignment="Center" Margin="230,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Year of production" HorizontalAlignment="Left" Margin="85,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Engine capacity" HorizontalAlignment="Left" Margin="265,115,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
