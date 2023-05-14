@@ -1,4 +1,6 @@
 # CAR-CATALOGUE
+https://youtu.be/NPAbeBoS_wk <--- Link to a video showcasing the functionality of this program.
+
 This is a car-catalogue written in C# (WPF) and using a database (Microsoft SQL Server). 
 
 In this programme user can:
